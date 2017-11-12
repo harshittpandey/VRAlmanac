@@ -7,20 +7,20 @@ import { IAppState, IVrModule } from 'app/interfaces';
 import { VrModuleType } from 'app/enums';
 
 const panorama = <IVrModule>{
-              id: '001',
-              name: 'Panorama',
-              type: VrModuleType.AFrame,
-              markup: `
+        id: '001',
+        name: 'Panorama',
+        type: VrModuleType.AFrame,
+        markup: `
              <a-scene>
                <a-sky src="assets/images/puydesancy.jpg" rotation="0 -130 0"></a-sky>
              </a-scene>
               `
-            };
+};
 const curvedMockups = <IVrModule>{
-    id: '002',
-    name: 'Curved Mockups',
-    type: VrModuleType.AFrame,
-    markup: `
+        id: '002',
+        name: 'Curved Mockups',
+        type: VrModuleType.AFrame,
+        markup: `
     <a-scene>
             <a-assets>
                 <img id="mozvr" src="/assets/images/mozvr.png">
@@ -46,10 +46,10 @@ const curvedMockups = <IVrModule>{
     `
 };
 const spheresAndFog = <IVrModule>{
-    id: '003',
-    name: 'Spheres and Fog',
-    type: VrModuleType.AFrame,
-    markup: `
+        id: '003',
+        name: 'Spheres and Fog',
+        type: VrModuleType.AFrame,
+        markup: `
     <a-scene fog="type: linear; color: #AAB; far: 30; near: 0">
         <a-assets>
         <img id="highlight1" src="/assets/images/radial-highlight.png">
@@ -188,10 +188,10 @@ const spheresAndFog = <IVrModule>{
 };
 
 const shopping = <IVrModule>{
-    id: '004',
-    name: 'Shopping',
-    type: VrModuleType.AFrame,
-    markup: `
+        id: '004',
+        name: 'Shopping',
+        type: VrModuleType.AFrame,
+        markup: `
         <a-scene>
         <a-assets>
                 <a-asset-item id="why-male-models" 
@@ -259,7 +259,7 @@ const shopping = <IVrModule>{
     `
 };
 
-const dynamicLights = <IVrModule> {
+const dynamicLights = <IVrModule>{
         id: '005',
         name: '360° Video',
         type: VrModuleType.AFrame,
@@ -274,8 +274,17 @@ const dynamicLights = <IVrModule> {
           </a-scene>
         `
 };
-
+const VRAlmanac = <IVrModule>{
+        id: '006',
+        name: 'VRAlmanac',
+        type: VrModuleType.AFrame,
+        markup: `
+        <a-scene>
+        <a-sky src="assets/images/spacebg.jpg" rotation="0 -130 0"></a-sky>        
+        <a-scene>
+        `
+};
 export const predefinedModules: IVrModule[] = [panorama, curvedMockups,
-                                               spheresAndFog, shopping,
-                                               dynamicLights];
+        spheresAndFog, shopping,
+        dynamicLights, VRAlmanac];
 
