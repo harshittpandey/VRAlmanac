@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets> <a-mixin id="light" geometry="primitive: sphere; radius: 1" material="color: #FFF; shader: flat" light="color: #DDDDFF; distance: 120; intensity: 0.25; type: point"></a-mixin></a-assets>
+      <!-- <a-entity position="0 1.25 -5" mixin="light"></a-entity> -->
+      <a-entity light="type: ambient; color: #fff; intensity: 5" ></a-entity>
+      <a-sphere light="type: ambient; color: #fff; intensity: 0.2;distance:100"  src="sun.jpg" position="0 0 -5" radius="30.25" color="#EF2D5E"  scale:3.3"></a-sphere>
+      <!-- Mercury -->
+      <a-sphere src="Mercury.jpg" position="65.25 0 -5" radius="0.9" color="#fff"></a-sphere>
+      <!-- venus -->
+      <a-sphere src="venus.jpg" position="75 0 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <!-- earth -->
+      <a-sphere src="saturn.jpg" position="85 0 -5" radius="0.9" color="#EF2D5E"></a-sphere>
+      <!-- Mars -->
+      <a-sphere src="mars.jpg" position="95 0 -5" radius="1" color="#EF2D5E"></a-sphere>
+       <!--jupiter-->
+      <a-sphere src="jupiter.jpg" position="135 0 -5" radius="15.25" color="#EF2D5E"></a-sphere>
+      <!-- saturn -->
+      <a-sphere src="saturn.jpg" position="175 0 -5" radius="12.7575" color="#EF2D5E"></a-sphere>
+      <!-- uranus -->
+      <a-sphere src="uranus.jpg" position="205 0 -5" radius="5.4135" color="#EF2D5E"></a-sphere>
+      <!-- neptune -->
+      <a-sphere src="neptune.jpg" position="235 0 -5" radius="5.238" color="#EF2D5E"></a-sphere>
+      <!-- pluto -->
+      <a-sphere src="pluto.jpg" position="255 0 -5" radius="0.2511" color="#EF2D5E"></a-sphere>
+      
+      <a-sky src="final-test2.jpg" radius="10000"></a-sky>
+    </a-scene>
+  </body>
+</html>
