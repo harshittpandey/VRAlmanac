@@ -280,8 +280,12 @@ const VRAlmanac = <IVrModule>{
         type: VrModuleType.AFrame,
         markup: `
         <a-scene>
-        <a-sky src="assets/images/spacebg.jpg" rotation="0 -130 0"></a-sky>        
-        <a-scene>
+                <a-sky src="assets/images/spacebg.jpg"></a-sky>
+                <a-entity camera look-controls wasd-controls="fly: true;acceleration:50" ></a-entity>
+                <a-entity position="0 0 0">
+                <a-sphere position="0 0.3 0" radius="0.3" color="#7BC8A4" src="https://c1.staticflickr.com/1/64/163773711_d17bb1055f_z.jpg?zz=1"></a-sphere>
+                </a-entity>        
+        </a-scene>
         `
 };
 export const predefinedModules: IVrModule[] = [panorama, curvedMockups,
